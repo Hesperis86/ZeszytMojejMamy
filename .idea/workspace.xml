@@ -34,6 +34,7 @@
         <option value="Interface" />
         <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -47,6 +48,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChironConsult" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-1763519359">
+      <recent name="com.example.zeszytmojejmamy" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -126,10 +132,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601217110334" />
-    <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1601213381202">
+    <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog" timestamp="1601365658492">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1601213381202" />
+    <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1601365658492" />
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1601365709826">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1601365709826" />
+    <state x="628" y="243" key="AndroidCreateXmlResourceDialog" timestamp="1601371210489">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="628" y="243" key="AndroidCreateXmlResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1601371210489" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601056798023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -150,17 +164,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1491" height="152" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601213187866" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1601212807394">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1601363225797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1601212807394" />
-    <state x="427" y="186" key="run.anything.popup" timestamp="1600708136352">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1601363225797" />
+    <state x="427" y="185" key="run.anything.popup" timestamp="1601363239527">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="427" y="186" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1600708136352" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601217598012">
+    <state x="427" y="185" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1601363239527" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601370367513">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601217598012" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601370367513" />
   </component>
 </project>

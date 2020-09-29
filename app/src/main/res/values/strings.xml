@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Zeszyt Mojej Mamy</string>
+    <string name="portions_number">Liczba porcji:</string>
+    <string name="ingredients">Składniki:</string>
+    <string name="recipeTitle">Tytuł przepisu</string>
+    <string name="save">Zapisz</string>
+    <string name="addRecipe">Dodaj przepis</string>
+    <string name="emptyFieldsWarning">Dodaj tytuł przepisu, składniki i opis przygotowania.</string>
+    <string name="recipeSaved">Zapisano przepis</string>
+    <string name="recipeNotSaved">Przepis nie został zapisany</string>
 </resources>
