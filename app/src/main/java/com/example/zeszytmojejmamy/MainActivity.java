@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -58,12 +60,14 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == ADD_RECIPE_REQUEST && resultCode == RESULT_OK) {
             String title = data.getStringExtra(AddRecipeActivity.EXTRA_TITLE);
-            String portions = data.getStringExtra(AddRecipeActivity.EXTRA_PORTIONS_NUM);
-            //data.getIntExtra(EXTRA, default num)
-            String ingredients = data.getStringExtra(AddRecipeActivity.EXTRA_INGREDIENTS);
-            String preparationInstructions = data.getStringExtra(AddRecipeActivity.EXTRA_PREP_INSTRUCTIONS);
+            //int portions = Integer.parseInt(data.getStringExtra(AddRecipeActivity.EXTRA_PORTIONS_NUM));
+            int portions = data.getIntExtra(AddRecipeActivity.EXTRA_PORTIONS_NUM, 1);
+            HashMap<String, Float> ingredients = Converters.fromStr(data.getStringExtra(AddRecipeActivity.EXTRA_INGREDIENTS));
+            ArrayList<String> preparationInstructions = Converters.fromString(data.getStringExtra(AddRecipeActivity.EXTRA_PREP_INSTRUCTIONS));
+
 
             Recipe recipe = new Recipe(title, null, ingredients, portions, preparationInstructions, null, null);
+            //Recipe recipe = new Recipe("Tytuł", null, null, 0, null, null, null);
             recipeViewModel.insert(recipe);
 
             Toast.makeText(this, getString(R.string.recipeSaved), Toast.LENGTH_SHORT).show();

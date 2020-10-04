@@ -23,9 +23,9 @@ public class Recipe {
     private HashMap<String, Float> ingredients;
     private int portions;
     private ArrayList<String> preparationInstructions;
-    //@Nullable
+   @Nullable
     private String category;
-    //@Nullable
+    @Nullable
     private ArrayList<String> tags;
 
     public Recipe(String name, byte[] image, HashMap<String, Float> ingredients, int portions, ArrayList<String> preparationInstructions, String category, ArrayList<String> tags) {
@@ -37,6 +37,7 @@ public class Recipe {
         this.category = category;
         this.tags = tags;
     }
+
 
     /************ different constructors ***********************************************************
     public Recipe(String name, HashMap<String, Float> ingredients, int portions, ArrayList<String> preparationInstructions, String category, ArrayList<String> tags) {

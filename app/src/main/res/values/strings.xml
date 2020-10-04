@@ -8,4 +8,6 @@
     <string name="emptyFieldsWarning">Dodaj tytuł przepisu, składniki i opis przygotowania.</string>
     <string name="recipeSaved">Zapisano przepis</string>
     <string name="recipeNotSaved">Przepis nie został zapisany</string>
+    <string name="prepInstructions">Opis przygotowania</string>
+
 </resources>

@@ -11,6 +11,9 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class AddRecipeActivity extends AppCompatActivity {
     public static final String EXTRA_TITLE = "com.example.zeszytmojejmamy.EXTRA_TITLE";
     public static final String EXTRA_PORTIONS_NUM = "com.example.zeszytmojejmamy.EXTRA_PORTIONS_NUM";
@@ -38,12 +41,12 @@ public class AddRecipeActivity extends AppCompatActivity {
 
     private void saveRecipe() {
         String title = editTextTitle.getText().toString();
-        String portionNumber = editTextPortions.getText().toString();
+        int portionNumber = Integer.parseInt(String.valueOf(editTextPortions.getText()));
         //int portionNumber = editTextPortions.toString().getValue();
-        String ingredients = editTextIngredients.getText().toString();
-        String preparationInstructions = editTextPreparationInstructions.getText().toString();
+        HashMap<String, Float> ingredients = Converters.fromStr(editTextIngredients.getText().toString());
+        ArrayList<String> preparationInstructions = Converters.fromString(editTextPreparationInstructions.getText().toString());
 
-        if (title.trim().isEmpty() || ingredients.trim().isEmpty() || preparationInstructions.trim().isEmpty()) {
+        if (title.trim().isEmpty() || Converters.fromStringMap(ingredients).trim().isEmpty() || Converters.fromArrayList(preparationInstructions).trim().isEmpty()) {
             Toast.makeText(this, getString(R.string.emptyFieldsWarning), Toast.LENGTH_SHORT).show();
             return;
         }

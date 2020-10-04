@@ -12,28 +12,28 @@
         android:id="@+id/edit_text_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nazwa potrawy"
+        android:hint="@string/recipeTitle"
         android:inputType="text"/>
 
     <EditText
         android:id="@+id/edit_text_portions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Liczba porcji"
+        android:hint="@string/portions_number"
         android:inputType="number"/>
 
     <EditText
         android:id="@+id/edit_text_ingredients"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Składniki"
+        android:hint="@string/ingredients"
         android:inputType="textMultiLine"/>
 
     <EditText
         android:id="@+id/edit_text_preparationInstructions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Opis przygotowania"
+        android:hint="@string/prepInstructions"
         android:inputType="textMultiLine"/>
-    
+
 </LinearLayout>
